@@ -1,0 +1,161 @@
+#section-dashboard {
+  padding-top: 32px;
+  padding-bottom: 80px;
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: var(--outfit);
+  }
+
+  .auth-welcome {
+    display: flex;
+    align-items: center;
+
+    .profile-picture {
+      margin-right: 16px;
+      border-radius: 50%;
+    }
+
+    .content {
+      p {
+        font-family: var(--outfit);
+
+        &:nth-child(1) {
+          font-size: 0.8rem;
+        }
+
+        &:nth-child(2) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .card-launcher {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    background-color: var(--teal900);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.08);
+      top: -60px;
+      right: -60px;
+    }
+
+    &::after {
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.05);
+      bottom: -40px;
+      left: -40px;
+    }
+
+    .amount {
+      position: relative; // keeps text above glow
+      z-index: 1;
+
+      font-family: var(--outfit);
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: white;
+
+      &-label {
+        font-size: 0.8rem;
+        color: white;
+      }
+    }
+  }
+
+  .launch-pads {
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--grey100);
+      }
+
+      .content {
+        width: 100%;
+
+        .headings {
+          margin-bottom: 8px;
+
+          .name {
+            font-size: 1.4rem;
+            font-family: var(--outfit);
+          }
+          .datetime {
+            font-size: 0.8rem;
+          }
+        }
+
+        .info {
+          display: flex;
+
+          p {
+            margin-right: 4px;
+            padding: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+
+            svg {
+              margin-right: 4px;
+            }
+
+            &.time {
+              color: red;
+            }
+            &.launcher {
+              display: flex;
+              align-items: center;
+              background-color: var(--orange900);
+              color: white;
+            }
+            &.rocketeer {
+              display: flex;
+              align-items: center;
+              background-color: var(--orange900);
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .activities {
+    margin-bottom: 32px;
+    background-color: var(--grey100);
+    border-radius: 16px;
+    padding: 16px;
+
+    .card-transparent {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      padding: 8px 16px;
+    }
+  }
+}

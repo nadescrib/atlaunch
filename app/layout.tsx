@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { Outfit, DM_Sans } from "next/font/google";
-import "./global.scss";
+import "./_styles/global.scss";
 
 const outfit = Outfit({
-  variable: "--font-outfit",
+  variable: "--outfit",
   subsets: ["latin"],
 });
 
 const dm_sans = DM_Sans({
   weight: "400",
-  variable: "--font-dm_sans",
+  variable: "--dm_sans",
   style: ["normal", "italic"],
   subsets: ["latin"],
 });

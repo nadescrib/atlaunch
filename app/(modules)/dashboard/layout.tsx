@@ -12,10 +12,10 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
+    <section id="section-dashboard">
       <TopBar />
       {children}
       <BottomBar />
-    </div>
+    </section>
   );
 }
