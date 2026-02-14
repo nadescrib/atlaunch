@@ -43,7 +43,7 @@
     padding: 32px 16px;
     background-color: var(--teal900);
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 
     &::before,
     &::after {
@@ -90,7 +90,7 @@
       align-items: center;
       padding: 32px;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
       cursor: pointer;
 
       &:hover {
@@ -104,10 +104,11 @@
           margin-bottom: 8px;
 
           .name {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-family: var(--outfit);
           }
-          .datetime {
+          .date,
+          .time {
             font-size: 0.8rem;
           }
         }
@@ -148,14 +149,10 @@
 
   .activities {
     margin-bottom: 32px;
-    background-color: var(--grey100);
     border-radius: 16px;
     padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
-    .card-transparent {
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: 8px;
-      padding: 8px 16px;
-    }
+    
   }
 }

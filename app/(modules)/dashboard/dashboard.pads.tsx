@@ -45,9 +45,9 @@ export default function LaunchPads() {
               <div className="content">
                 <div className="headings">
                   <p className="name">{p.name}</p>
-                  <p className="datetime">
-                    {defaultDate(p.date)} | {defaultTime(p.start)} -{" "}
-                    {defaultTime(p.end)}
+                  <p className="date">{defaultDate(p.date)}</p>
+                  <p className="time">
+                    {defaultTime(p.start)} - {defaultTime(p.end)}
                   </p>
                 </div>
                 <div className="info">
