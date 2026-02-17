@@ -1,6 +1,6 @@
+import { BottomBar, TopBar } from "@/app/_primitives/navs";
 import type { Metadata } from "next";
-import "./index.scss";
-import { BottomBar, TopBar } from "@/app/_components/navs";
+import "./layout.scss";
 
 export const metadata: Metadata = {
   title: "AtLaunch | Dashboard",

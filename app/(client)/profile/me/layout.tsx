@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./index.scss";
-import { BottomBar, TopBar } from "@/app/_components/navs";
+import "./layout.scss";
+import { BottomBar, TopBar } from "@/app/_primitives/navs";
 
 export const metadata: Metadata = {
   title: "AtLaunch | Profile",
